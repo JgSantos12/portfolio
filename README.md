@@ -1,19 +1,10 @@
-```
-
 # Portfólio
-Olá, Bem vindo ao meu primeiro projeto de portfólio, desenvolvido com o curso de HTML e CSS da Alura.
+Primeiro projeto de portfolio, feito com o auxílio dos cursos de HTML e CSS da Alura.
 
-## Ferramentas utilizadas:
-
+## Tecnologias Utilizadas:
 * HTML
-
 * CSS
-
-* Flex-box
+* Flexbox
 
 ## Feito por:
-
-### João Santos
-
-
-```
+### João Gabriel Santos
