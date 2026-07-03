@@ -16,6 +16,7 @@ const modalImagemUm = document.getElementById('modal-image-um');
 const modalImagemDois = document.getElementById('modal-image-dois');
 const modalImagemTres = document.getElementById('modal-image-tres');
 const modalLink = document.getElementById('modal-link')
+const projetoLink = document.getElementById('projeto-link')
 const divPomodoro = document.getElementById('pomodoro');
 const divQuiz = document.getElementById('quiz');
 const divInkwell = document.getElementById('inkwell');
@@ -38,6 +39,7 @@ function aluraMais() {
     modalSQL.style.display = 'none';
     divModalImagens.style.display = 'none';
     modalLink.href = 'https://github.com/JgSantos12/aluraplus';
+    projetoLink.style.display = 'none';
 }
 
 function aluraLivros() {
@@ -56,6 +58,7 @@ function aluraLivros() {
     modalImagemDois.src = './assets/aluralivros2.png';
     modalImagemTres.style.display = 'none'
     modalLink.href = 'https://github.com/JgSantos12/aluralivros';
+    projetoLink.style.display = 'none';
 }
 
 function tenrikyo() {
@@ -74,6 +77,7 @@ function tenrikyo() {
     modalImagemDois.src = './assets/tenrikyo2.png';
     modalImagemTres.src = './assets/tenrikyo3.png'
     modalLink.href = 'https://github.com/JgSantos12/tcc-etec';
+    projetoLink.style.display = 'none';
 }
 
 function inkwell() {
@@ -92,6 +96,7 @@ function inkwell() {
     modalImagemDois.src = './assets/inkwell2.png';
     modalImagemTres.style.display = 'none';
     modalLink.href = 'https://github.com/JgSantos12/inkwell';
+    projetoLink.style.display = 'none';
 }
 
 function quiz() {
@@ -110,6 +115,7 @@ function quiz() {
     modalImagemDois.src = './assets/quiz2.png';
     modalImagemTres.style.display = 'none';
     modalLink.href = 'https://github.com/JgSantos12/quiz';
+    projetoLink.href = 'https://jgsantos12.github.io/quiz/';
 }
 
 function pomodoro() {
@@ -128,6 +134,7 @@ function pomodoro() {
     modalImagemDois.src = './assets/pomodoro2.png';
     modalImagemTres.style.display = 'none';
     modalLink.href = 'https://github.com/JgSantos12/pomodoro-timer';
+    projetoLink.href = 'https://jgsantos12.github.io/pomodoro-timer/';
 }
 
 

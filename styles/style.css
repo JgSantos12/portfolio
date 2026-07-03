@@ -471,6 +471,26 @@ body {
     gap: 2em;
 }
 
+.modal__links{
+    display: flex;
+    gap: 2em;
+}
+
+.modal__link{
+    padding: 1em 2em;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    border-radius: 10px;
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.modal__link:hover{
+    background-color: var(--cor-terciaria);
+}
+
 @media (max-width: 1200px) {
 
     /* Geral */
@@ -541,6 +561,10 @@ body {
 
     .modal__tecnologias{
         flex-wrap: wrap;
+    }
+
+    .modal__link{
+        padding: 1em 0.5em;
     }
 
     /* Sobre */
