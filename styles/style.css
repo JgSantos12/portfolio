@@ -269,6 +269,7 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
     gap: 1.5em;
+    cursor: pointer;
 }
 
 .projetos__card:hover {
@@ -334,6 +335,142 @@ body {
     width: 100%;
 }
 
+/* Modal dos Projetos  */
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    background: var(--cor-card);
+    padding: 5em 2em;
+    border-radius: 10px;
+    width: 75%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.modal-fechar {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: var(--cor-terciaria);
+    transition: 0.3s;
+}
+
+.modal-fechar:hover {
+    transform: scale(1.2);
+    color: var(--texto);
+}
+
+.modal__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.modal__titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 2.25rem;
+    color: var(--cor-terciaria);
+}
+
+.modal__titulo::after {
+    content: "";
+    display: block;
+    /* Define o tamanho exato da linha */
+    width: 125px;
+    /* Define a espessura da linha */
+    height: 15px;
+    /* Cor da linha */
+    background-color: var(--cor-secundaria);
+    /* Espaço entre o texto e a linha */
+    margin-top: 5px;
+    /* Opcional: deixa as pontas arredondadas */
+    border-radius: 10px;
+}
+
+.modal__image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.modal__container__div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.modal__div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+}
+
+.modal__label {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.25rem;
+    color: var(--cor-terciaria);
+}
+
+.modal__label::after {
+    content: "";
+    display: block;
+    /* Define o tamanho exato da linha */
+    width: 50px;
+    /* Define a espessura da linha */
+    height: 7.5px;
+    /* Cor da linha */
+    background-color: var(--cor-secundaria);
+    /* Espaço entre o texto e a linha */
+    margin-top: 2.5px;
+    /* Opcional: deixa as pontas arredondadas */
+    border-radius: 10px;
+}
+
+.modal__texto{
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-terciaria);
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.modal__tecnologias{
+    display: flex;
+    gap: 1em;
+}
+
+.modal__tecnologias__image {
+    width: 3.5rem;
+    border: solid 1px var(--cor-secundaria);
+    border-radius: 10px;
+    padding: 0.1em;
+}
+
+.modal__div__imagens{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
 @media (max-width: 1200px) {
 
     /* Geral */
@@ -387,6 +524,25 @@ body {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    /* Modal - Projetos */
+
+    .modal{
+        padding: 2.5em 1em;
+    }
+
+    .modal__titulo{
+        font-size: 1.75rem;
+    }
+
+    .modal__titulo::after{
+        width: 75px;
+        height: 12.5px;
+    }
+
+    .modal__tecnologias{
+        flex-wrap: wrap;
+    }
+
     /* Sobre */
 
     .sobremim {
@@ -411,7 +567,7 @@ body {
         margin-top: 3px;
     }
 
-    .contato__container{
+    .contato__container {
         gap: 0.5rem;
     }
 
@@ -430,4 +586,5 @@ body {
         padding: 2em 1.5em;
 
     }
+
 }

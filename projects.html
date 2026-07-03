@@ -19,7 +19,7 @@
     <main class="projetos">
         <h1 class="projects__title">Meus Projetos</h1>
         <section class="projetos__card__container">
-            <div class="projetos__card">
+            <div class="projetos__card" id="pomodoro">
                 <img src="./assets/pomodoro.png" class="card__image">
                 <div class="card__textos">
                     <h2 class="card__titulo">Pomodoro Timer</h2>
@@ -31,7 +31,7 @@
                 <a href="https://github.com/JgSantos12/pomodoro-timer" class="card__link" target="_blank"><img
                         src="./assets/github2.png" class="card__image__link"></a>
             </div>
-            <div class="projetos__card">
+            <div class="projetos__card" id="quiz">
                 <img src="./assets/quiz.png" class="card__image">
                 <div class="card__textos">
                     <h2 class="card__titulo">Quiz</h2>
@@ -44,7 +44,7 @@
                 <a href="https://github.com/JgSantos12/quiz" class="card__link" target="_blank"><img
                         src="./assets/github2.png" class="card__image__link"></a>
             </div>
-            <div class="projetos__card">
+            <div class="projetos__card" id="inkwell">
                 <img src="./assets/inkwell.png" class="card__image">
                 <div class="card__textos">
                     <h2 class="card__titulo">Inkwell - Editor de Notas</h2>
@@ -57,7 +57,7 @@
                 <a href="https://github.com/JgSantos12/inkwell" class="card__link" target="_blank"><img
                         src="./assets/github2.png" class="card__image__link"></a>
             </div>
-            <div class="projetos__card">
+            <div class="projetos__card" id="tcc-etec">
                 <img src="./assets/tenrikyo.png" class="card__image">
                 <div class="card__textos">
                     <h2 class="card__titulo">Bazar Tenrikyo - Gerenciamento de Doações</h2>
@@ -70,7 +70,7 @@
                 <a href="https://github.com/JgSantos12/tcc-etec" class="card__link" target="_blank"><img
                         src="./assets/github2.png" class="card__image__link"></a>
             </div>
-            <div class="projetos__card">
+            <div class="projetos__card" id="aluralivros">
                 <img src="./assets/aluralivros.png" class="card__image">
                 <div class="card__textos">
                     <h2 class="card__titulo">Alurabooks</h2>
@@ -83,7 +83,7 @@
                 <a href="https://github.com/JgSantos12/aluralivros" class="card__link" target="_blank"><img
                         src="./assets/github2.png" class="card__image__link"></a>
             </div>
-            <div class="projetos__card">
+            <div class="projetos__card" id="aluramais">
                 <img src="./assets/aluramais.png" class="card__image">
                 <div class="card__textos">
                     <h2 class="card__titulo">Alura+</h2>
@@ -95,6 +95,56 @@
             </div>
         </section>
     </main>
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <button class="modal-fechar" id="modal-fechar">✕</button>
+            <div class="modal__container">
+                <h2 class="modal__titulo"></h2>
+
+                <img src="./assets/tenrikyo.png" class="modal__image" id="imagem-capa">
+                <div class="modal__container__div">
+                    <div class="modal__div">
+                        <h3 class="modal__label">Demandante</h3>
+                        <p class="modal__texto" id="demandante"></p>
+                    </div>
+                    <div class="modal__div">
+                        <h3 class="modal__label">Descrição</h3>
+                        <p class="modal__texto" id="descricao">
+                        </p>
+                    </div>
+                    <div class="modal__div">
+                        <h3 class="modal__label">Tecnologias</h3>
+                        <div class="modal__tecnologias">
+                            <img src="./assets/htmlAsset.png" class="modal__tecnologias__image" id="html">
+                            <img src="./assets/cssAsset.png" class="modal__tecnologias__image" id="css">
+                            <img src="./assets/javascriptAsset.png" class="modal__tecnologias__image" id="javascript">
+                            <img src="./assets/pythonAsset.png" class="modal__tecnologias__image" id="python">
+                            <img src="./assets/phpAsset.png" class="modal__tecnologias__image" id="php">
+                            <img src="./assets/sqlAsset.png" class="modal__tecnologias__image" id="sql">
+                        </div>
+                    </div>
+
+                    <div class="modal__div" id="div-imagens">
+                        <h3 class="modal__label">Mais Imagens</h3>
+                        <div class="modal__div__imagens">
+                            <img src="" alt="" class="modal__image" id="modal-image-um">
+                            <img src="" alt="" class="modal__image" id="modal-image-dois">
+                            <img src="" alt="" class="modal__image" id="modal-image-tres">
+                        </div>
+                    </div>
+
+                    <div class="modal__div">
+                        <h3 class="modal__label">Links</h3>
+                        <a href="" class="card__link" target="_blank" id="modal-link"><img
+                                src="./assets/github2.png" class="card__image__link"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
