@@ -134,7 +134,7 @@ function pomodoro() {
     modalImagemDois.src = './assets/pomodoro2.png';
     modalImagemTres.style.display = 'none';
     modalLink.href = 'https://github.com/JgSantos12/pomodoro-timer';
-    projetoLink.href = 'https://vercel.com/joao-gabriel-santos-projects-39969c3a/pomodoro-timer';
+    projetoLink.href = 'https://pomodoro-timer-tawny-ten.vercel.app/';
 }
 
 
