@@ -23,6 +23,7 @@ const divInkwell = document.getElementById('inkwell');
 const divTenrikyo = document.getElementById('tcc-etec');
 const divAluraLivros = document.getElementById('aluralivros');
 const divAluraMais = document.getElementById('aluramais');
+const divCEP = document.getElementById('cep');
 
 // Atribuindo dados a cada projeto
 
@@ -137,6 +138,26 @@ function pomodoro() {
     projetoLink.href = 'https://jgsantos12.github.io/pomodoro-timer/';
 }
 
+function cep() {
+    modalTitulo.textContent = 'Buscador de CEP';
+    modalCapa.src = './assets/buscadorCEP.png';
+    modalDemandante.textContent = 'Projeto pessoal';
+    modalDescricao.textContent = 'Projeto de portfólio, desenvolvido com HTML, CSS e JavaScript puros. Consiste num site simples, que consome a API ViaCEP, nele o usuário digita o CEP a ser buscado e receberá como resposta o logradouro, bairro, localidade e UF do CEP.';
+    modalHTML.style.display = 'block';
+    modalCSS.style.display = 'block';
+    modalJS.style.display = 'block';
+    modalPython.style.display = 'none';
+    modalPHP.style.display = 'none';
+    modalSQL.style.display = 'none';
+    divModalImagens.style.display = 'flex';
+    modalImagemUm.src = './assets/buscadorCEP1.png';
+    modalImagemDois.src = './assets/buscadorCEP2.png';
+    modalImagemTres.style.display = 'none';
+    modalLink.href = 'https://github.com/JgSantos12/Buscador-de-CEP';
+    projetoLink.href = 'https://jgsantos12.github.io/Buscador-de-CEP/';
+}
+
+
 
 // Abrindo o modal
 
@@ -156,6 +177,11 @@ modalOverlay.addEventListener('click', (e) => {
 modalFechar.addEventListener('click', fecharModal);
 
 // Eventos para abrir modal
+
+// Buscador de CEP
+
+divCEP.addEventListener('click', cep);
+divCEP.addEventListener('click', abrirModal);
 
 // Pomodoro Timer
 
