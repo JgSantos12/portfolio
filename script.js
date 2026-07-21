@@ -24,6 +24,7 @@ const divTenrikyo = document.getElementById('tcc-etec');
 const divAluraLivros = document.getElementById('aluralivros');
 const divAluraMais = document.getElementById('aluramais');
 const divCEP = document.getElementById('cep');
+const divGit = document.getElementById('github');
 
 // Atribuindo dados a cada projeto
 
@@ -157,6 +158,25 @@ function cep() {
     projetoLink.href = 'https://jgsantos12.github.io/Buscador-de-CEP/';
 }
 
+function github() {
+    modalTitulo.textContent = 'Buscador de Perfis - GitHub';
+    modalCapa.src = './assets/buscagithub.png';
+    modalDemandante.textContent = 'Projeto pessoal';
+    modalDescricao.textContent = 'Projeto de portfólio, desenvolvido com HTML, CSS e JavaScript puros. Consiste num site simples, que consome a API do GitHub, nele o usuário digita o nome de usuário a ser buscado e o website retorna o perfil do usuário no GitHub, contendo nome, username, biografia, empresa, quantidade de repositórios e data de criação da conta, além de permitir que o usuário vá diretamente ao perfil da conta buscada no GitHub.';
+    modalHTML.style.display = 'block';
+    modalCSS.style.display = 'block';
+    modalJS.style.display = 'block';
+    modalPython.style.display = 'none';
+    modalPHP.style.display = 'none';
+    modalSQL.style.display = 'none';
+    divModalImagens.style.display = 'flex';
+    modalImagemUm.src = './assets/buscagithub1.png';
+    modalImagemDois.style.display = 'none';
+    modalImagemTres.style.display = 'none';
+    modalLink.href = 'https://github.com/JgSantos12/buscador-github';
+    projetoLink.href = 'https://jgsantos12.github.io/buscador-github/';
+}
+
 
 
 // Abrindo o modal
@@ -177,6 +197,11 @@ modalOverlay.addEventListener('click', (e) => {
 modalFechar.addEventListener('click', fecharModal);
 
 // Eventos para abrir modal
+
+// Buscador de Perfis - GitHub
+
+divGit.addEventListener('click', github);
+divGit.addEventListener('click', abrirModal);
 
 // Buscador de CEP
 
