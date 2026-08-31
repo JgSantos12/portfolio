@@ -191,7 +191,7 @@ function minecraft() {
     modalSQL.style.display = 'none';
     divModalImagens.style.display = 'flex';
     modalImagemUm.src = './assets/minecraft2.png';
-    modalImagemDois.style.display = './assets/minecraft3.png';
+    modalImagemDois.src = './assets/minecraft3.png';
     modalImagemTres.style.display = 'none';
     modalLink.href = 'https://github.com/JgSantos12/Projeto-Minecraft';
     projetoLink.href = 'https://jgsantos12.github.io/Projeto-Minecraft/index.html';
