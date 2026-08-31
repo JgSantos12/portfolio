@@ -25,6 +25,7 @@ const divAluraLivros = document.getElementById('aluralivros');
 const divAluraMais = document.getElementById('aluramais');
 const divCEP = document.getElementById('cep');
 const divGit = document.getElementById('github');
+const divMine = document.getElementById('minecraft')
 
 // Atribuindo dados a cada projeto
 
@@ -177,6 +178,25 @@ function github() {
     projetoLink.href = 'https://jgsantos12.github.io/buscador-github/';
 }
 
+function minecraft() {
+    modalTitulo.textContent = 'Projeto Minecraft';
+    modalCapa.src = './assets/minecraft1.png';
+    modalDemandante.textContent = 'Faculdade de Análise e Desenvolvimento de Sistemas';
+    modalDescricao.textContent = 'Este é um website simples, feito com HTML e CSS puros, que foi solicitado como um projeto introdutório da disciplina Desenvolvimento Web no segundo semestre do curso de Análise e Desenvolvimento de Sistemas na FATEC.';
+    modalHTML.style.display = 'block';
+    modalCSS.style.display = 'block';
+    modalJS.style.display = 'none';
+    modalPython.style.display = 'none';
+    modalPHP.style.display = 'none';
+    modalSQL.style.display = 'none';
+    divModalImagens.style.display = 'flex';
+    modalImagemUm.src = './assets/minecraft2.png';
+    modalImagemDois.style.display = './assets/minecraft3.png';
+    modalImagemTres.style.display = 'none';
+    modalLink.href = 'https://github.com/JgSantos12/Projeto-Minecraft';
+    projetoLink.href = 'https://jgsantos12.github.io/Projeto-Minecraft/index.html';
+}
+
 
 
 // Abrindo o modal
@@ -197,6 +217,11 @@ modalOverlay.addEventListener('click', (e) => {
 modalFechar.addEventListener('click', fecharModal);
 
 // Eventos para abrir modal
+
+// Projeto Minecraft
+
+divMine.addEventListener('click', minecraft);
+divMine.addEventListener('click', abrirModal);
 
 // Buscador de Perfis - GitHub
 
