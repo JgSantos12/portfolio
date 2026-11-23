@@ -61,7 +61,7 @@ function aluraLivros() {
     divModalImagens.style.display = 'flex';
     modalImagemUm.src = './assets/aluralivros1.png';
     modalImagemDois.src = './assets/aluralivros2.png';
-    modalImagemTres.style.display = 'none'
+    modalImagemTres.style.display = 'none';
     modalLink.href = 'https://github.com/JgSantos12/aluralivros';
     projetoLink.style.display = 'none';
 }
@@ -80,7 +80,8 @@ function tenrikyo() {
     divModalImagens.style.display = 'flex';
     modalImagemUm.src = './assets/tenrikyo1.png';
     modalImagemDois.src = './assets/tenrikyo2.png';
-    modalImagemTres.src = './assets/tenrikyo3.png'
+    modalImagemTres.style.display = 'block';
+    modalImagemTres.src = './assets/tenrikyo3.png';
     modalLink.href = 'https://github.com/JgSantos12/tcc-etec';
     projetoLink.style.display = 'none';
 }
@@ -232,6 +233,7 @@ function biblioteca() {
     divModalImagens.style.display = 'flex';
     modalImagemUm.src = './assets/biblioteca2.png';
     modalImagemDois.src = './assets/biblioteca3.png';
+    modalImagemTres.style.display = 'block';
     modalImagemTres.src = './assets/biblioteca4.png';
     modalLink.href = 'https://github.com/JgSantos12/Linguagem-de-Programacao-1';
     projetoLink.style.display = 'none';
