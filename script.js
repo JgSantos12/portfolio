@@ -60,6 +60,7 @@ function aluraLivros() {
     modalSQL.style.display = 'none';
     divModalImagens.style.display = 'flex';
     modalImagemUm.src = './assets/aluralivros1.png';
+    modalImagemDois.style.display = 'block';
     modalImagemDois.src = './assets/aluralivros2.png';
     modalImagemTres.style.display = 'none';
     modalLink.href = 'https://github.com/JgSantos12/aluralivros';
@@ -79,6 +80,7 @@ function tenrikyo() {
     modalSQL.style.display = 'block';
     divModalImagens.style.display = 'flex';
     modalImagemUm.src = './assets/tenrikyo1.png';
+    modalImagemDois.style.display = 'block';
     modalImagemDois.src = './assets/tenrikyo2.png';
     modalImagemTres.style.display = 'block';
     modalImagemTres.src = './assets/tenrikyo3.png';
@@ -99,6 +101,7 @@ function inkwell() {
     modalSQL.style.display = 'block';
     divModalImagens.style.display = 'flex';
     modalImagemUm.src = './assets/inkwell1.png';
+    modalImagemDois.style.display = 'block';
     modalImagemDois.src = './assets/inkwell2.png';
     modalImagemTres.style.display = 'none';
     modalLink.href = 'https://github.com/JgSantos12/inkwell';
@@ -118,6 +121,7 @@ function quiz() {
     modalSQL.style.display = 'none';
     divModalImagens.style.display = 'flex';
     modalImagemUm.src = './assets/quiz1.png';
+    modalImagemDois.style.display = 'block';
     modalImagemDois.src = './assets/quiz2.png';
     modalImagemTres.style.display = 'none';
     modalLink.href = 'https://github.com/JgSantos12/quiz';
@@ -137,6 +141,7 @@ function pomodoro() {
     modalSQL.style.display = 'none';
     divModalImagens.style.display = 'flex';
     modalImagemUm.src = './assets/pomodoro1.png';
+    modalImagemDois.style.display = 'block';
     modalImagemDois.src = './assets/pomodoro2.png';
     modalImagemTres.style.display = 'none';
     modalLink.href = 'https://github.com/JgSantos12/pomodoro-timer';
@@ -156,6 +161,7 @@ function cep() {
     modalSQL.style.display = 'none';
     divModalImagens.style.display = 'flex';
     modalImagemUm.src = './assets/buscadorCEP1.png';
+    modalImagemDois.style.display = 'block';
     modalImagemDois.src = './assets/buscadorCEP2.png';
     modalImagemTres.style.display = 'none';
     modalLink.href = 'https://github.com/JgSantos12/Buscador-de-CEP';
@@ -194,6 +200,7 @@ function minecraft() {
     modalSQL.style.display = 'none';
     divModalImagens.style.display = 'flex';
     modalImagemUm.src = './assets/minecraft2.png';
+    modalImagemDois.style.display = 'block';
     modalImagemDois.src = './assets/minecraft3.png';
     modalImagemTres.style.display = 'none';
     modalLink.href = 'https://github.com/JgSantos12/Projeto-Minecraft';
@@ -213,6 +220,7 @@ function jogos() {
     modalSQL.style.display = 'block';
     divModalImagens.style.display = 'flex';
     modalImagemUm.src = './assets/jogos2.png';
+    modalImagemDois.style.display = 'block';
     modalImagemDois.src = './assets/jogos3.png';
     modalImagemTres.style.display = 'none';
     modalLink.href = 'https://github.com/JgSantos12/minhalistadejogos';
@@ -232,6 +240,7 @@ function biblioteca() {
     modalSQL.style.display = 'block';
     divModalImagens.style.display = 'flex';
     modalImagemUm.src = './assets/biblioteca2.png';
+    modalImagemDois.style.display = 'block';
     modalImagemDois.src = './assets/biblioteca3.png';
     modalImagemTres.style.display = 'block';
     modalImagemTres.src = './assets/biblioteca4.png';
