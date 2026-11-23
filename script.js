@@ -26,6 +26,8 @@ const divAluraMais = document.getElementById('aluramais');
 const divCEP = document.getElementById('cep');
 const divGit = document.getElementById('github');
 const divMine = document.getElementById('minecraft')
+const divJogos = document.getElementById('jogos')
+const divBiblioteca = document.getElementById('biblioteca')
 
 // Atribuindo dados a cada projeto
 
@@ -197,6 +199,44 @@ function minecraft() {
     projetoLink.href = 'https://jgsantos12.github.io/Projeto-Minecraft/index.html';
 }
 
+function jogos() {
+    modalTitulo.textContent = 'Projeto Minha Lista de Jogos';
+    modalCapa.src = './assets/jogos1.png';
+    modalDemandante.textContent = 'Faculdade de Análise e Desenvolvimento de Sistemas';
+    modalDescricao.textContent = 'Aplicação web para organizar a sua coleção de jogos, inspirada no MyAnimeList. O usuário cadastra os jogos manualmente, acompanha o status de cada um (jogando, zerado, na fila ou abandonado), dá notas, registra as horas jogadas e consulta estatísticas da coleção. O projeto é composto por uma API REST em PHP e por um front-end em PHP, HTML e CSS que consome essa API. O front-end não acessa o banco de dados: toda a comunicação passa pela API.';
+    modalHTML.style.display = 'block';
+    modalCSS.style.display = 'block';
+    modalJS.style.display = 'none';
+    modalPython.style.display = 'none';
+    modalPHP.style.display = 'block';
+    modalSQL.style.display = 'block';
+    divModalImagens.style.display = 'flex';
+    modalImagemUm.src = './assets/jogos2.png';
+    modalImagemDois.src = './assets/jogos3.png';
+    modalImagemTres.style.display = 'none';
+    modalLink.href = 'https://github.com/JgSantos12/minhalistadejogos';
+    projetoLink.style.display = 'none';
+}
+
+function biblioteca() {
+    modalTitulo.textContent = 'Projeto Biblioteca';
+    modalCapa.src = './assets/biblioteca1.png';
+    modalDemandante.textContent = 'Faculdade de Análise e Desenvolvimento de Sistemas';
+    modalDescricao.textContent = 'Sistema de gerenciamento de biblioteca com API REST (Flask + MySQL) e interface desktop (Tkinter). Permite cadastrar alunos, bibliotecários e livros, registrar empréstimos e devoluções e controlar a disponibilidade dos exemplares, com acesso protegido por login com JWT.';
+    modalHTML.style.display = 'none';
+    modalCSS.style.display = 'none';
+    modalJS.style.display = 'none';
+    modalPython.style.display = 'block';
+    modalPHP.style.display = 'none';
+    modalSQL.style.display = 'block';
+    divModalImagens.style.display = 'flex';
+    modalImagemUm.src = './assets/biblioteca2.png';
+    modalImagemDois.src = './assets/biblioteca3.png';
+    modalImagemTres.src = './assets/biblioteca4.png';
+    modalLink.href = 'https://github.com/JgSantos12/Linguagem-de-Programacao-1';
+    projetoLink.style.display = 'none';
+}
+
 
 
 // Abrindo o modal
@@ -217,6 +257,14 @@ modalOverlay.addEventListener('click', (e) => {
 modalFechar.addEventListener('click', fecharModal);
 
 // Eventos para abrir modal
+
+// Projeto Biblioteca
+divBiblioteca.addEventListener('click', biblioteca);
+divBiblioteca.addEventListener('click', abrirModal)
+
+// Projeto Minha Lista de Jogos
+divJogos.addEventListener('click', jogos);
+divJogos.addEventListener('click', abrirModal);
 
 // Projeto Minecraft
 
